@@ -1,0 +1,15 @@
+.social-header {
+  @include reset-list;
+
+  margin-left: auto;
+  align-self: flex-end;
+  padding-bottom: 50px;
+}
+
+.social-header__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

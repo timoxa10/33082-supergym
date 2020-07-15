@@ -1,0 +1,145 @@
+.header-promo {
+  display: flex;
+}
+
+.header-promo__offer {
+  position: relative;
+  margin-right: 64px;
+}
+
+.header-promo__social {
+  margin-right: auto;
+}
+
+.header-promo__slogan {
+  padding-left: 99px;
+  padding-top: 103px;
+  padding-bottom: 50px;
+}
+
+.header-promo__title {
+  position: relative;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 109px;
+  line-height: 109px;
+  letter-spacing: 0.03em;
+  text-align: right;
+  color: $white;
+  margin-bottom: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: no-repeat 0 0 url("../img/icon-D-omsk-title.svg");
+    top: -60px;
+    right: -50px;
+    width: 140px;
+    height: 35px;
+  }
+}
+
+.header-promo__sidebar {
+  width: 113px;
+  position: absolute;
+  bottom: 202px;
+  left: 19px;
+  text-align: right;
+
+  @include reset-list;
+  @include text-options(14px, $white, 21px, normal);
+}
+
+.header-promo__button {
+  display: block;
+  box-sizing: border-box;
+  width: 230px;
+  border: 4px solid $white;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+  margin-left: auto;
+  cursor: pointer;
+
+  @include text-options(12px, $white, 14px, bold);
+}
+
+@media (max-width: $tablet-width) {
+  .header-promo__social {
+    display: none;
+  }
+
+  .header-promo__image {
+    margin-left: auto;
+    margin-top: 18px;
+  }
+
+  .header-promo__slogan {
+    padding-left: 91px;
+    padding-top: 57px;
+    padding-bottom: 35px;
+  }
+
+  .header-promo__offer {
+    margin: 0;
+  }
+
+  .header-promo__title {
+    font-size: 86px;
+    line-height: 86px;
+
+    &::before {
+      background: no-repeat 0 0 url("../img/icon-T-omsk-title.svg");
+      top: -40px;
+      right: -1px;
+      width: 62px;
+      height: 25px;
+    }
+  }
+
+  .header-promo__button {
+    width: 183px;
+  }
+
+  .header-promo__sidebar {
+    bottom: 150px;
+    left: 2px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header-promo__image {
+    display: none;
+  }
+
+  .header-promo__offer {
+    width: 100%;
+  }
+
+  .header-promo__slogan {
+    padding-left: 0;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .header-promo__title {
+    font-size: 78px;
+    line-height: 78px;
+
+    &::before {
+      background: no-repeat 0 0 url("../img/icon-M-omsk-title.svg");
+      width: 52px;
+      height: 28px;
+    }
+  }
+
+  .header-promo__sidebar {
+    bottom: 115px;
+    left: 0;
+  }
+
+  .header-promo__button {
+    width: 290px;
+    margin: 0 auto;
+  }
+}

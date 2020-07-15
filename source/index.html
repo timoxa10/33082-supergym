@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Supergym</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="content-wrapper">
+      <section class="header-nav">
+        <a class="header-nav__logo logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/D-logo-header.svg">
+            <source media="(min-width: 768px)" srcset="img/T-logo-header.svg">
+            <img class="logo__image" src="img/M-logo-header.svg" width="68" height="15" alt="Supergym">
+          </picture>
+        </a>
+        <a class="header-nav__phone" href="tel:88005555555">8-800-555-55-55</a>
+      </section>
+      <div class="header-promo">
+        <section class="header-promo__offer">
+          <div class="header-promo__slogan">
+            <h1 class="header-promo__title">Фитнес<br> центр</h1>
+          </div>
+          <ul class="header-promo__sidebar">
+            <li>Тренажёрный зал</li>
+            <li>Групповые занятия</li>
+            <li>Кардио-зона</li>
+          </ul>
+          <a class="header-promo__button">Купить абонемент</a>
+        </section>
+        <section class="header-promo__image">
+          <picture>
+            <!--
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/D-about-section@1x.webp 1x, img/D-about-section@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/T-about-section@1x.webp 1x, img/T-about-section@2x.webp 2x">
+            <source type="image/webp" srcset="img/M-about-section@1x.webp, img/M-about-section@2x.webp 2x">
+            -->
+
+            <!-- 1х: 560px; 2x: 1120px -->
+            <source media="(min-width: 1200px)" srcset="img/D-header-model@1x.jpg 1x, img/D-header-model@2x.jpg 2x">
+            <!-- 1х: 324px; 2x: 648px -->
+            <source media="(min-width: 768px)" srcset="img/T-header-model@1x.jpg 1x, img/T-header-model@2x.jpg 2x">
+            <!-- 1х: 290px; 2x: 580px -->
+            <img class="about-trip__image" src="img/T-header-model@1x.jpg" srcset="img/T-header-model@1x.jpg2x" alt="Фитнес центр">
+          </picture>
+        </section>
+        <ul class="header-promo__social social-header">
+          <li class="social-header__item">
+            <a class="social-header__link" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+              <svg class="social-header__box social-header__box--facebook" width="13" height="9">
+                <use xlink:href="img/sprite.svg#icon-social-header-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-header__item">
+            <a class="social-header__link" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+              <svg class="social-header__box social-header__box--vkontakte" width="14" height="9">
+                <use xlink:href="img/sprite.svg#icon-social-header-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-header__item">
+            <a class="social-header__link" href="https://www.instagram.com/htmlacademy">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+              <svg class="social-header__box social-header__box--instagram" width="12" height="14">
+                <use xlink:href="img/sprite.svg#icon-social-header-ig"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</body>
+</html>
