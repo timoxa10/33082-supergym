@@ -9,11 +9,9 @@
 
 .header-nav__phone {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 26px;
-  line-height: 26px;
   letter-spacing: 0.03em;
-  color: $white;
 
+  @include text-options(26px, $white, 26px, bold);
   @include reset-decoration;
 }
 

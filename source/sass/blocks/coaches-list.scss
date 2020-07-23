@@ -1,0 +1,193 @@
+.coaches-list {
+  margin-bottom: 120px;
+}
+
+.coaches-list__slider .slick-track {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coaches-list__item {
+  position: relative;
+  min-height: 294px !important;
+  margin-right: 40px;
+}
+
+.coaches-list__item:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+.coaches-list__slider .slick-arrow {
+  display: block !important;
+}
+
+.coaches-list__actions {
+  display: none;
+  position: absolute;
+  background: rgba(16, 38, 84, 0.89);
+
+  @include centered-position;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  padding-top: 32px;
+}
+
+.coaches-list__item:hover .coaches-list__coach-title {
+  opacity: 0;
+}
+
+.coaches-list__item:hover .coaches-list__actions {
+  display: block;
+  cursor: pointer;
+}
+
+.coaches-list__coach-subtitle,
+.coaches-list__coach-title {
+  @include text-options(18px, $white, 27px, bold);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.coaches-list__coach-title {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+
+  @include vertical-position;
+}
+
+.coaches-list__major {
+  @include text-options(16px, $white, 24px, normal);
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.coaches-list__awards {
+  list-style-type: disc;
+  padding-left: 70px;
+}
+
+.coaches-list__awards-item {
+  @include text-options(14px, $white, 21px, normal);
+  margin-bottom: 13px;
+}
+
+.coaches-list__item--01 {
+  background-image: url("../img/D-instructor-01@1x.jpg");
+
+  @include flexible-background;
+  background-color: #bac3d5;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/D-instructor-01@2x.jpg");
+  }
+}
+
+.coaches-list__item--02 {
+  background-image: url("../img/D-instructor-02@1x.jpg");
+
+  @include flexible-background;
+  background-color: #bac3d5;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/D-instructor-02@2x.jpg");
+  }
+}
+
+.coaches-list__item--03 {
+  background-image: url("../img/D-instructor-03@1x.jpg");
+
+  @include flexible-background;
+  background-color: #bac3d5;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/D-instructor-03@2x.jpg");
+  }
+}
+
+.coaches-list__item--04 {
+  background-image: url("../img/D-instructor-04@1x.jpg");
+
+  @include flexible-background;
+  background-color: #bac3d5;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/D-instructor-04@2x.jpg");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .coaches-list {
+    margin-bottom: 100px;
+  }
+
+  .coaches-list__title {
+    text-align: center;
+    margin-bottom: 38px;
+  }
+
+  .coaches-list__slider {
+    padding: 0 56px !important;
+  }
+
+  .coaches-list__item {
+    margin-right: 30px;
+  }
+
+  .coaches-list__item:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  .coaches-list__item--03 {
+    background-image: url("../img/T-instructor-03@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/T-instructor-03@2x.jpg");
+    }
+  }
+
+  .coaches-list__item--04 {
+    background-image: url("../img/T-instructor-04@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/T-instructor-04@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .coaches-list {
+    margin-bottom: 35px;
+  }
+
+  .coaches-list__item {
+    min-height: 274px !important;
+    margin-right: 0;
+  }
+
+  .coaches-list__title {
+    margin-bottom: 10px;
+  }
+
+  .coaches-list__slider {
+    padding: 32px !important;
+  }
+
+  .coaches-list__actions {
+    padding-top: 23px;
+  }
+
+  .coaches-list__awards {
+    padding-left: 50px;
+  }
+
+  .coaches-list__item--03 {
+    background-image: url("../img/M-instructor-03@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/M-instructor-03@2x.jpg");
+    }
+  }
+}

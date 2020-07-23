@@ -3,6 +3,10 @@
   height: 20px;
 }
 
+.logo--nav {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
   .logo__image {
     width: 82px;
@@ -14,5 +18,13 @@
   .logo__image {
     width: 68px;
     height: 15px;
+  }
+
+  .logo--nav {
+    display: block;
+  }
+
+  .logo--single {
+    display: none;
   }
 }

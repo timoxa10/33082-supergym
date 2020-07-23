@@ -1,0 +1,217 @@
+.facilities {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.facilities-container {
+  margin: 0 auto;
+  max-width: $desktop-width;
+  padding-right: 103px;
+  padding-left: 103px;
+}
+
+.facilities__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.facilities__desc {
+  width: 36%;
+  padding-left: 60px;
+}
+
+.facilities__image {
+  width: 57%;
+  min-height: 401px;
+  background-image: url("../img/D-gym-bg@1x.jpg");
+  background-color: #000145;
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/D-gym-bg@2x.jpg");
+  }
+}
+
+.facilities__title {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.facilities__subtitle {
+  margin-top: 5px;
+  margin-bottom: 38px;
+
+  @include text-options(18px, $blue, 27px, normal);
+}
+
+.facilities__text-desc {
+  @include text-options(16px, $blue, 24px, 300);
+}
+
+.facilities__text-desc--hidden {
+  margin-top: -8px;
+}
+
+.facilities__video-wrapper {
+  width: 31%;
+  margin-top: -10%;
+  margin-left: 38%;
+}
+
+.facilities__video-preview {
+  position: relative;
+  width: 100%;
+  min-height: 228px;
+  background-image: url("../img/D-gym-video@1x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/D-gym-video@2x.jpg");
+  }
+}
+
+.facilities__video-overlay {
+  position: absolute;
+  background-color: rgba(20, 54, 122, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.facilities__video-button {
+  position: absolute;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+
+  @include centered-position;
+}
+
+@media (max-width: $tablet-width) {
+  .facilities {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .facilities-container {
+    max-width: $tablet-width;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .facilities__wrapper {
+    flex-direction: column;
+  }
+
+  .facilities__desc {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .facilities__text-desc {
+    padding-right: 86px;
+    padding-left: 60px;
+  }
+
+  .facilities__subtitle {
+    margin-bottom: 33px;
+  }
+
+  .facilities__text-desc--hidden {
+    display: none;
+  }
+
+  .facilities__image {
+    width: 100%;
+    min-height: 345px;
+    background-image: url("../img/T-gym-bg@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/T-gym-bg@2x.jpg");
+    }
+  }
+
+  .facilities__video-wrapper {
+    width: 39%;
+    margin: 0 auto;
+    margin-top: -12%;
+  }
+
+  .facilities__video-preview {
+    width: 100%;
+    min-height: 167px;
+    background-image: url("../img/T-gym-video@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/T-gym-video@2x.jpg");
+    }
+  }
+
+  .facilities__video-button {
+    width: 73px;
+    height: 73px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .facilities {
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+
+  .facilities-container {
+    max-width: $mobile-width;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .facilities__wrapper {
+    flex-direction: column;
+  }
+
+  .facilities__image {
+    width: 100%;
+    min-height: 313px;
+    background-image: url("../img/M-gym-bg@1x.jpg");
+    margin-bottom: 40px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/M-gym-bg@2x.jpg");
+    }
+  }
+
+  .facilities__desc {
+    text-align: left;
+    margin-bottom: 18px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .facilities__subtitle {
+    margin-bottom: 23px;
+  }
+
+  .facilities__text-desc {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+
+  .facilities__video-wrapper {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .facilities__video-preview {
+    width: 100%;
+    min-height: 167px;
+    background-image: url("../img/M-gym-bg@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/M-gym-bg@2x.jpg");
+    }
+  }
+}

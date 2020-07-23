@@ -1,0 +1,232 @@
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 115px;
+  background: #f8f9fc;
+}
+
+.benefits__title {
+  margin-top: 0;
+  text-align: center;
+}
+
+.benefits__wrapper {
+  position: relative;
+  padding-right: 73px;
+  padding-left: 87px;
+}
+
+.benefits__row {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits__column {
+  @include centered-position;
+
+  position: absolute;
+  width: 21%;
+  height: 307px;
+  flex-direction: column;
+  background: $blue;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.benefits__column-title {
+  display: block;
+  background: none;
+  margin-bottom: -15px;
+
+  @include text-options(74px, $white, 111px, bold);
+}
+
+.benefits__column-subtitle {
+  @include text-options(26px, $white, 39px, bold);
+}
+
+.benefits__column-text {
+  @include text-options(16px, $white, 24px, normal);
+  margin-top: 30px;
+}
+
+.benefits__item {
+  display: flex;
+  width: 33%;
+
+  @include reset-list;
+}
+
+.benefits__item--extra-bottom-padding {
+  padding-bottom: 75px;
+}
+
+.benefits__item--extra-top-padding {
+  padding-top: 65px;
+}
+
+.benefits__item--boarded {
+  border-bottom: 1px solid rgba(209, 10, 66, 0.2);
+}
+
+.benefits__item--comfort {
+  margin-left: -8px;
+}
+
+.benefits__achievements {
+  margin-right: 30px;
+}
+
+.benefits__achievements-number {
+  display: inline-block;
+  font-size: 71px;
+  line-height: 106px;
+  font-weight: bold;
+  background: linear-gradient(111.72deg, #ed0233 5.6%, #2e35ac 95.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -10px;
+}
+
+.benefits__achievements-measures {
+  display: block;
+
+  @include text-options(14px, #2e35ac, 21px, normal);
+  margin-top: -22px;
+}
+
+.benefits__text-title {
+  @include text-options(22px, $blue, 33px, bold);
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.benefits__text-advantage {
+  @include text-options(16px, $blue, 22px, 300);
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .benefits {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .benefits__title {
+    margin-bottom: 25px;
+  }
+
+  .benefits__wrapper {
+    padding: 0;
+  }
+
+  .benefits__item {
+    width: 48%;
+  }
+
+  .benefits__column {
+    width: 65%;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    height: 239px;
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+
+  .benefits__achievements-number {
+    font-size: 58px;
+    line-height: 107px;
+  }
+
+  .benefits__text-advantage {
+    margin-top: 0;
+  }
+
+  .benefits__achievements-measures {
+    margin-top: -30px;
+  }
+
+  .benefits__column-title {
+    margin-bottom: -20px;
+  }
+
+  .benefits__column-text {
+    margin-top: 15px;
+  }
+
+  .benefits__text-title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 15px;
+  }
+
+  .benefits__column-subtitle {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .benefits__item--extra-bottom-padding {
+    padding-bottom: 45px;
+  }
+
+  .benefits__item--extra-top-padding {
+    padding-top: 25px;
+  }
+
+  .benefits__item--boarded {
+    border: none;
+  }
+
+  .benefits__item--comfort {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .benefits {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  .benefits__title {
+    margin-bottom: 30px;
+  }
+
+  .benefits__row {
+    flex-direction: column;
+  }
+
+  .benefits__item {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .benefits__column {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .benefits__achievements {
+    margin: 0;
+  }
+
+  .benefits__text-title {
+    margin-top: 8px;
+  }
+
+  .benefits__column-text {
+    margin-top: 5px;
+  }
+
+  .benefits__item--extra-bottom-padding {
+    padding-bottom: 20px;
+  }
+
+  .benefits__item--extra-top-padding {
+    padding-top: 25px;
+  }
+}

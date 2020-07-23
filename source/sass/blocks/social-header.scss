@@ -3,7 +3,7 @@
 
   margin-left: auto;
   align-self: flex-end;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 
 .social-header__item {
@@ -12,4 +12,12 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.social-header__box:hover {
+  fill: #ed0233;
+}
+
+.social-header__box:active {
+  fill: #003eb7;
 }

@@ -1,0 +1,145 @@
+.reviews {
+  margin-bottom: 120px;
+}
+
+.reviews__title {
+  text-align: center;
+}
+
+.reviews__slider {
+  width: 48% !important;
+  margin: 0 auto !important;
+  min-height: 242px !important;
+  background: #1c3374;
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+}
+
+.reviews__item {
+  display: flex !important;
+  padding: 55px 60px 30px 60px;
+}
+
+.reviews__picture-wrapper {
+  width: 80px;
+  height: 80px;
+  margin-right: 28px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.reviews__picture {
+  width: 80px;
+  height: 80px;
+}
+
+.reviews__picture-name,
+.reviews__comment-name {
+  width: 100%;
+
+  @include text-options(20px, $white, 30px, bold);
+}
+
+.reviews__comment-name {
+  display: block;
+  margin-top: 0;
+  margin-bottom: -5px;
+}
+
+.reviews__picture-name {
+  display: none;
+}
+
+.reviews__comment-text {
+  @include text-options(16px, $white, 22px, normal);
+}
+
+.reviews__slider button.slick-next,
+button.slick-next:hover {
+  top: 48%;
+  right: -55px;
+}
+
+.reviews__slider button.slick-prev,
+button.slick-prev:hover {
+  top: 48%;
+  left: -55px;
+}
+
+@media (max-width: $tablet-width) {
+  .reviews {
+    margin-bottom: 100px;
+  }
+
+  .reviews__slider {
+    width: 83% !important;
+  }
+
+  .reviews__item {
+    padding: 55px 60px 30px 65px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .reviews {
+    margin-bottom: 70px;
+  }
+
+  .reviews__title {
+    margin-bottom: 40px;
+  }
+
+  .reviews__item {
+    flex-direction: column;
+    padding: 40px 25px 20px 25px;
+  }
+
+  .reviews__slider {
+    width: 78% !important;
+    min-height: 335px;
+  }
+
+  .reviews__comment-name {
+    display: none;
+    line-height: 26px;
+  }
+
+  .reviews__picture-name {
+    display: block;
+    text-align: left;
+  }
+
+  .reviews__reviewer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  .reviews__picture-wrapper {
+    width: 68px;
+    height: 68px;
+    margin: 0;
+    margin-right: 15px;
+  }
+
+  .reviews__picture {
+    width: 68px;
+    height: 68px;
+  }
+
+  .reviews__comment-text {
+    text-align: center;
+  }
+
+  .reviews__slider button.slick-next,
+  button.slick-next:hover {
+    top: 50%;
+    right: -35px;
+  }
+
+  .reviews__slider button.slick-prev,
+  button.slick-prev:hover {
+    top: 50%;
+    left: -35px;
+  }
+}

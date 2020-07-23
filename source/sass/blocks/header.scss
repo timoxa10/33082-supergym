@@ -1,21 +1,38 @@
 .header {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  min-height: 658px;
+  background-image: url("../img/D-Header-bg@1x.jpg");
+  background-color: #b80027;
   padding-top: 31px;
   min-height: 658px;
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/D-Header-bg@2x.jpg");
+  }
 }
 
 @media (max-width: $tablet-width) {
   .header {
-    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-    padding-top: 40px;
     min-height: 554px;
+    padding-top: 40px;
+    background-image: url("../img/T-Header-bg@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/T-Header-bg@2x.jpg");
+    }
   }
 }
 
 @media (max-width: $mobile-width) {
   .header {
-    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-    padding-top: 18px;
     min-height: 491px;
+    padding-top: 18px;
+
+    background-image: url("../img/M-Header-bg@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/M-Header-bg@2x.jpg");
+    }
   }
 }
