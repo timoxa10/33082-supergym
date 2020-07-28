@@ -118,6 +118,18 @@
   }
 }
 
+.coaches-list__slider button.slick-prev,
+.coaches-list__slider button.slick-prev:hover {
+  top: 41% !important;
+  left: -30px !important;
+}
+
+.coaches-list__slider  button.slick-next,
+.coaches-list__slider button.slick-next:hover {
+  top: 41% !important;
+  right: -30px !important;
+}
+
 @media (max-width: $tablet-width) {
   .coaches-list {
     margin-bottom: 100px;
@@ -169,6 +181,18 @@
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/T-instructor-04@2x.jpg");
     }
+  }
+
+  .coaches-list__slider button.slick-prev,
+  .coaches-list__slider button.slick-prev:hover {
+    top: 49% !important;
+    left: 0 !important;
+  }
+
+  .coaches-list__slider  button.slick-next,
+  .coaches-list__slider button.slick-next:hover {
+    top: 49% !important;
+    right: 0 !important;
   }
 }
 
