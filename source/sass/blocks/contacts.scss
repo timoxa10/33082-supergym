@@ -33,6 +33,16 @@
   display: block;
 
   @include reset-decoration;
+
+  &:hover {
+    cursor: pointer;
+    color: #ed0233;
+  }
+
+  &:active {
+    cursor: pointer;
+    color: #003eb7;
+  }
 }
 
 .contacts__item-phone {
@@ -70,6 +80,7 @@
 
 @media (max-width: $mobile-width) {
   .contacts__wrapper {
+    padding-top: 33px;
     flex-direction: column;
   }
 

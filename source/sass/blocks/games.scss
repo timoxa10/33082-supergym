@@ -105,6 +105,10 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  &:hover {
+    background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+  }
 }
 
 @media (max-width: $tablet-width) {

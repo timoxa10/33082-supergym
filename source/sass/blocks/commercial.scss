@@ -40,9 +40,8 @@
 }
 
 .commercial__nav {
-  width: 31% !important;
+  width: 341px !important;
   margin: 0 auto 38px !important;
-  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
 .commercial__nav .slick-track {
@@ -56,22 +55,70 @@
 
 .commercial__item {
   width: 31%;
+  border: 7px solid $white;
+  margin-right: 40px;
   box-sizing: border-box;
   min-height: 448px;
   background: $white;
-  padding-top: 28px;
+  padding-top: 22px;
   text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .commercial__nav-item {
+  position: relative;
   width: 33.3% !important;
   padding-bottom: 10px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
   @include text-options(20px, rgba(16, 38, 84, 0.5), 30px, normal);
 
   &:last-child {
     text-align: right;
   }
+}
+
+.commercial__nav-text--one-month::after {
+  display: none;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 66px;
+  height: 2px;
+  background-color: #d10a42;
+}
+
+.commercial__nav-text--six-month::after {
+  display: none;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 86px;
+  height: 2px;
+  background-color: #d10a42;
+}
+
+.commercial__nav-text--twelve-month::after {
+  display: none;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 88px;
+  height: 2px;
+  background-color: #d10a42;
+}
+
+
+.slick-active.is-active .commercial__nav-text--one-month::after,
+.slick-active.is-active .commercial__nav-text--six-month::after,
+.slick-active.is-active .commercial__nav-text--twelve-month::after {
+  display: block;
 }
 
 .commercial__nav-item:hover {
@@ -149,7 +196,7 @@
   .commercial {
     position: relative;
     padding-top: 95px;
-    padding-bottom: 60px;
+    padding-bottom: 95px;
   }
 
   .commercial__wrapper::after {
@@ -157,11 +204,11 @@
   }
 
   .commercial__title {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 
   .commercial__nav {
-    width: 49% !important;
+    width: 332px !important;
     margin-bottom: 45px !important;
   }
 
@@ -182,8 +229,11 @@
 
   .commercial__item {
     width: 442px;
-    margin: 0 auto;
-    margin-bottom: 38px;
+    margin: 0 auto 38px;
+
+    &:last-child {
+      margin: 0 auto;
+    }
   }
 
   .commercial__price-pseudo {
@@ -194,11 +244,11 @@
 @media (max-width: $mobile-width) {
   .commercial {
     padding-top: 70px;
-    padding-bottom: 35px;
+    padding-bottom: 72px;
   }
 
   .commercial__nav {
-    width: 100% !important;
+    width: 290px !important;
     margin: 0 auto;
     margin-bottom: 35px !important;
   }
@@ -241,9 +291,9 @@
   }
 
   .commercial__item {
-    width: 100%;
+    width: 290px;
     min-height: 384px;
-    padding-top: 20px;
+    padding-top: 15px;
     margin-bottom: 35px;
   }
 }

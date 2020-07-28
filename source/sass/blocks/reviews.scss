@@ -55,19 +55,23 @@
 
 .reviews__slider button.slick-next,
 button.slick-next:hover {
-  top: 48%;
-  right: -55px;
+  top: 48% !important;
+  right: -55px !important;
 }
 
 .reviews__slider button.slick-prev,
 button.slick-prev:hover {
-  top: 48%;
-  left: -55px;
+  top: 48% !important;
+  left: -55px !important;
 }
 
 @media (max-width: $tablet-width) {
   .reviews {
     margin-bottom: 100px;
+  }
+
+  .reviews__title {
+    margin-bottom: 40px;
   }
 
   .reviews__slider {
@@ -82,10 +86,6 @@ button.slick-prev:hover {
 @media (max-width: $mobile-width) {
   .reviews {
     margin-bottom: 70px;
-  }
-
-  .reviews__title {
-    margin-bottom: 40px;
   }
 
   .reviews__item {
@@ -133,13 +133,13 @@ button.slick-prev:hover {
 
   .reviews__slider button.slick-next,
   button.slick-next:hover {
-    top: 50%;
-    right: -35px;
+    top: 50% !important;
+    right: -35px !important;
   }
 
   .reviews__slider button.slick-prev,
   button.slick-prev:hover {
-    top: 50%;
-    left: -35px;
+    top: 50% !important;
+    left: -35px !important;
   }
 }

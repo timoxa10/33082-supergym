@@ -140,8 +140,21 @@
     margin-right: 0;
   }
 
+  .coaches-list__item--01 {
+    background-size: 268px 294px;
+    background-position: center;
+  }
+
+  .coaches-list__item--02 {
+    background-size: 268px 294px;
+    background-position: center;
+  }
+
   .coaches-list__item--03 {
     background-image: url("../img/T-instructor-03@1x.jpg");
+    background-size: 268px 294px;
+    background-color: #c9d7e2;
+    background-position: center;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/T-instructor-03@2x.jpg");
@@ -150,6 +163,8 @@
 
   .coaches-list__item--04 {
     background-image: url("../img/T-instructor-04@1x.jpg");
+    background-size: 268px 294px;
+    background-position: center;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/T-instructor-04@2x.jpg");
@@ -183,11 +198,24 @@
     padding-left: 50px;
   }
 
+  .coaches-list__item--01 {
+    background-size: 226px 274px;
+  }
+
+  .coaches-list__item--02 {
+    background-size: 226px 274px;
+  }
+
   .coaches-list__item--03 {
     background-image: url("../img/M-instructor-03@1x.jpg");
+    background-size: 226px 274px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/M-instructor-03@2x.jpg");
     }
+  }
+
+  .coaches-list__item--04 {
+    background-size: 226px 274px;
   }
 }

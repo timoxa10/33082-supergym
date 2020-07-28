@@ -10,10 +10,13 @@
 .header-promo__image {
   width: 43%;
   height: 556px;
+  margin-top: -8px;
   background-image: url("../img/D-header-model@1x.jpg");
   background-color: #000145;
 
   @include flexible-background;
+
+  background-position: top;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/D-header-model@2x.jpg");
@@ -53,7 +56,7 @@
 .header-promo__sidebar {
   width: 113px;
   position: absolute;
-  top: 53%;
+  top: 54%;
   left: 5%;
   text-align: right;
 
@@ -136,7 +139,8 @@
   }
 
   .header-promo__offer {
-    width: 100%;
+    width: 290px;
+    margin: 0 auto;
   }
 
   .header-promo__slogan {

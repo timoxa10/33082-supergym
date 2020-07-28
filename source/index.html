@@ -91,9 +91,15 @@
       <h3 class="title commercial__title" id="commercial">Абонементы</h3>
       <div class="commercial__wrapper">
         <ul class="commercial__nav">
-          <li class="commercial__nav-item">1 месяц</li>
-          <li class="commercial__nav-item">6 месяцев</li>
-          <li class="commercial__nav-item">12 месяцев</li>
+          <li class="commercial__nav-item">
+            <span class="commercial__nav-text commercial__nav-text--one-month">1 месяц</span>
+          </li>
+          <li class="commercial__nav-item">
+            <span class="commercial__nav-text commercial__nav-text--six-month">6 месяцев</span>
+          </li>
+          <li class="commercial__nav-item">
+            <span class="commercial__nav-text commercial__nav-text--twelve-month">12 месяцев</span>
+          </li>
         </ul>
         <ul class="commercial__slider">
           <li class="commercial__content">
@@ -440,20 +446,20 @@
           <small class="promotions__main-heading">Год</small>
           <mark class="promotions__main-price">4999</mark>
           <p class="promotions__main-text">Безлимитный абонемент<br> в тренажерный зал</p>
-          <a class="promotions__main-button">Подробнее</a>
+          <a class="promotions__main-button" href="#">Подробнее</a>
         </div>
         <div class="promotions__image-content"></div>
       </div>
       <div class="promotions__list">
         <div class="promotions__list-item">
           <h3 class="promotions__list-title">Месяц бесплатно</h3>
-          <h3 class="promotions__list-text">Приведи друга, получи абонемент в подарок</h3>
-          <a class="promotions__list-button">Подробнее</a>
+          <p class="promotions__list-text">Приведи друга, получи абонемент в подарок</p>
+          <a class="promotions__list-button" href="#">Подробнее</a>
         </div>
         <div class="promotions__list-item">
           <h3 class="promotions__list-title">Скидка 20%</h3>
-          <h3 class="promotions__list-text">Корпоративный фитнес с&nbsp;командой</h3>
-          <a class="promotions__list-button">Подробнее</a>
+          <p class="promotions__list-text">Корпоративный фитнес с&nbsp;командой</p>
+          <a class="promotions__list-button" href="#">Подробнее</a>
         </div>
       </div>
     </div>
@@ -627,8 +633,10 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/imask"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/sliders.js"></script>
 </body>
 </html>

@@ -123,6 +123,7 @@
 
   .benefits__item {
     width: 48%;
+    justify-content: center;
   }
 
   .benefits__column {
@@ -142,7 +143,7 @@
   }
 
   .benefits__text-advantage {
-    margin-top: 0;
+    margin-top: 2px;
   }
 
   .benefits__achievements-measures {
@@ -208,10 +209,15 @@
   .benefits__column {
     width: 100%;
     margin-top: 30px;
+    height: 234px;
   }
 
   .benefits__achievements {
     margin: 0;
+  }
+
+  .benefits__column-title {
+    margin-bottom: -25px;
   }
 
   .benefits__text-title {
@@ -227,6 +233,6 @@
   }
 
   .benefits__item--extra-top-padding {
-    padding-top: 25px;
+    padding-top: 23px;
   }
 }
