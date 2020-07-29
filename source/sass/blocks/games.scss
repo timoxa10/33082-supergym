@@ -11,7 +11,7 @@
 
 .games__text-content {
   width: 43.2%;
-  padding-top: 90px;
+  padding-top: 80px;
   padding-left: 78px;
 }
 
@@ -29,6 +29,7 @@
 
 .games__info {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .games__title,
@@ -59,8 +60,8 @@
   position: relative;
 
   @include text-options(18px, $white, 27px, normal);
-  margin-top: -8px;
-  margin-bottom: 0;
+  margin-top: 3px;
+  margin-bottom: -5px;
 
   &::after {
     content: "";
@@ -113,7 +114,7 @@
 
 @media (max-width: $tablet-width) {
   .games {
-    margin-top: 100px;
+    margin-top: 110px;
     margin-bottom: 100px;
   }
 
@@ -123,7 +124,7 @@
 
   .games__text-content {
     width: 43%;
-    padding-top: 51px;
+    padding-top: 45px;
     padding-left: 45px;
   }
 
@@ -146,7 +147,7 @@
   }
 
   .games__info-title {
-    margin-top: -5px;
+    margin-top: 0;
     font-size: 12px;
     line-height: 18px;
 
@@ -174,6 +175,7 @@
   .games__info-time {
     font-size: 24px;
     line-height: 36px;
+    margin-top: -5px;
   }
 
   .games__content-text {

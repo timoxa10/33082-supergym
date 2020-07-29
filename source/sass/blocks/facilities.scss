@@ -35,12 +35,12 @@
 }
 
 .facilities__title {
-  margin-top: 50px;
+  margin-top: 45px;
   margin-bottom: 0;
 }
 
 .facilities__subtitle {
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 38px;
 
   @include text-options(18px, $blue, 27px, normal);
@@ -95,6 +95,15 @@
     padding-bottom: 100px;
   }
 
+  .facilities__title {
+    margin-top: 45px;
+  }
+
+  .facilities__subtitle {
+    margin-top: 12px;
+    margin-bottom: 35px;
+  }
+
   .facilities-container {
     max-width: $tablet-width;
     padding-right: 45px;
@@ -115,10 +124,6 @@
   .facilities__text-desc {
     padding-right: 86px;
     padding-left: 60px;
-  }
-
-  .facilities__subtitle {
-    margin-bottom: 33px;
   }
 
   .facilities__text-desc--hidden {

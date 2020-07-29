@@ -56,7 +56,7 @@
 
 .coaches-list__coach-title {
   position: absolute;
-  bottom: 25px;
+  bottom: 20px;
   width: 100%;
 
   @include vertical-position;
@@ -71,7 +71,7 @@
 
 .coaches-list__awards {
   list-style-type: disc;
-  padding-left: 70px;
+  padding-left: 27%;
 }
 
 .coaches-list__awards-item {

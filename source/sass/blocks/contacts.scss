@@ -1,5 +1,6 @@
 .contacts__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .contacts__wrapper {
@@ -26,6 +27,7 @@
 .contacts__item-subtitle {
   @include text-options(14px, $blue, 21px, normal);
   margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .contacts__item-phone,
@@ -43,10 +45,6 @@
     cursor: pointer;
     color: #003eb7;
   }
-}
-
-.contacts__item-phone {
-  margin-bottom: 14px;
 }
 
 @media (max-width: $tablet-width) {

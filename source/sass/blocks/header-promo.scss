@@ -30,8 +30,8 @@
 .header-promo__slogan {
   position: relative;
   padding-left: 99px;
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 75px;
+  padding-bottom: 65px;
 }
 
 .header-promo__title {
@@ -47,7 +47,7 @@
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 0.03em;
   text-align: right;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-bottom: 0;
 
   @include text-options(109px, $white, 109px, bold);
@@ -104,8 +104,8 @@
 
   .header-promo__slogan {
     padding-left: 91px;
-    padding-top: 52px;
-    padding-bottom: 35px;
+    padding-top: 45px;
+    padding-bottom: 50px;
   }
 
   .header-promo__offer {
@@ -120,7 +120,7 @@
   .header-promo__subtitle {
     font-size: 86px;
     line-height: 86px;
-    margin-top: 5px;
+    margin-top: 0;
   }
 
   .header-promo__button {
