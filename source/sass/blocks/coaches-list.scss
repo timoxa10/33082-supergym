@@ -140,6 +140,10 @@
     margin-bottom: 100px;
   }
 
+  .slick-list.draggable .coaches-list__item {
+    margin: 0 auto;
+  }
+
   .coaches-list__title {
     text-align: center;
     margin-bottom: 38px;
@@ -205,10 +209,6 @@
 @media (max-width: $mobile-width) {
   .coaches-list {
     margin-bottom: 35px;
-  }
-
-  .slick-list.draggable .coaches-list__item {
-    margin: 0 auto;
   }
 
   .coaches-list__item {

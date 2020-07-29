@@ -1,7 +1,7 @@
 .contact-us {
   background: linear-gradient(90deg, $blue 50%, $white 50%);
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-top: 65px;
+  padding-bottom: 45px;
 }
 
 .contact-us__wrapper {
@@ -19,7 +19,7 @@
 
 @media (max-width: $tablet-width) {
   .contact-us {
-    background: linear-gradient($blue 320px, $white 320px);
+    background: linear-gradient($blue 325px, $white 320px);
     padding: 0;
   }
 
@@ -34,7 +34,7 @@
 
   .contact-us__contacts {
     width: 100%;
-    padding: 70px 0 45px 88px;
+    padding: 65px 0 45px 88px;
   }
 }
 
