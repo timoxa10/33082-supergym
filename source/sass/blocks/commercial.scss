@@ -244,8 +244,8 @@
 
 @media (max-width: $mobile-width) {
   .commercial {
-    padding-top: 70px;
-    padding-bottom: 72px;
+    padding-top: 65px;
+    padding-bottom: 70px;
   }
 
   .commercial__nav {
@@ -264,7 +264,7 @@
   }
 
   .commercial__title {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .commercial__plan-title {
@@ -296,5 +296,9 @@
     min-height: 384px;
     padding-top: 15px;
     margin-bottom: 35px;
+  }
+
+  .commercial__plan-button {
+    padding: 24px  0 24px;
   }
 }
