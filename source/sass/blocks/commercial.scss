@@ -150,7 +150,7 @@
 .commercial__price-pseudo {
   position: absolute;
   width: 100%;
-  top: 34%;
+  top: 37%;
 
   @include vertical-position;
   margin: 0;
@@ -172,7 +172,7 @@
   width: 206px;
   margin: 0 auto;
   border: 2px solid #1c3374;
-  padding: 24px 0;
+  padding: 26px  0 24px;
   cursor: pointer;
 
   @include text-options(12px, #102654, 14px, bold);
