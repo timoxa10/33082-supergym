@@ -27,7 +27,7 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-  src: local("BebasNeueBold"), url("../fonts/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeueBold") format("woff");
+  src: local("BebasNeueBold"), url("../fonts/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeueBold.woff") format("woff");
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: local("BebasNeue-Light"), url("../fonts/BebasNeue-Light.woff2") format("woff2"), url("../fonts/BebasNeue-Light") format("woff");
+  src: local("BebasNeue-Light"), url("../fonts/BebasNeue-Light.woff2") format("woff2"), url("../fonts/BebasNeue-Light.woff") format("woff");
 }
 
 @font-face {
@@ -43,5 +43,5 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"), url("../fonts/BebasNeueRegular") format("woff");
+  src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"), url("../fonts/BebasNeueRegular.woff") format("woff");
 }
