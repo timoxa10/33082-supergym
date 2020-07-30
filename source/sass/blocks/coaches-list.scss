@@ -15,7 +15,7 @@
   position: relative;
   width: 22.4% !important;
   min-height: 294px !important;
-  margin-right: 40px;
+  margin-right: 0.7%;
 }
 
 .coaches-list__item:nth-child(4n+4) {
@@ -125,11 +125,11 @@
 
 .coaches-list__slider button.slick-prev,
 .coaches-list__slider button.slick-prev:hover {
-  top: 48%!important;
-  left: -55px!important;
+  top: 48% !important;
+  left: -55px !important;
 }
 
-.coaches-list__slider  button.slick-next,
+.coaches-list__slider button.slick-next,
 .coaches-list__slider button.slick-next:hover {
   top: 48% !important;
   right: -55px !important;
@@ -140,17 +140,14 @@
     margin-bottom: 100px;
   }
 
-  .slick-list.draggable .coaches-list__item {
-    margin: 0 auto;
-  }
-
   .coaches-list__title {
     text-align: center;
     margin-bottom: 45px;
   }
 
   .coaches-list__slider {
-    padding: 0 56px !important;
+    width: 566px !important;
+    margin: 0 auto !important;
   }
 
   .coaches-list__item {
@@ -195,20 +192,24 @@
 
   .coaches-list__slider button.slick-prev,
   .coaches-list__slider button.slick-prev:hover {
-    top: 49% !important;
-    left: 0 !important;
+    top: 47% !important;
+    left: -10% !important;
   }
 
-  .coaches-list__slider  button.slick-next,
+  .coaches-list__slider button.slick-next,
   .coaches-list__slider button.slick-next:hover {
-    top: 49% !important;
-    right: 0 !important;
+    top: 47% !important;
+    right: -10% !important;
   }
 }
 
 @media (max-width: $mobile-width) {
   .coaches-list {
     margin-bottom: 35px;
+  }
+
+  .slick-list.draggable .coaches-list__item {
+    margin: 0 auto;
   }
 
   .coaches-list__item {
@@ -222,7 +223,10 @@
   }
 
   .coaches-list__slider {
-    padding: 35px !important;
+    width: 226px !important;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 35px !important;
   }
 
   .coaches-list__actions {
@@ -252,5 +256,17 @@
 
   .coaches-list__item--04 {
     background-size: 226px 274px;
+  }
+
+  .coaches-list__slider button.slick-prev,
+  .coaches-list__slider button.slick-prev:hover {
+    top: 56% !important;
+    left: -14% !important;
+  }
+
+  .coaches-list__slider button.slick-next,
+  .coaches-list__slider button.slick-next:hover {
+    top: 56% !important;
+    right: -14% !important;
   }
 }

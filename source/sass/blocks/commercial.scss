@@ -1,7 +1,7 @@
 .commercial {
   position: relative;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
   background: #f8f9fc;
 }
 
@@ -15,17 +15,13 @@
   z-index: 999;
 }
 
-.commercial__wrapper {
-  position: relative;
-}
-
-.commercial__wrapper::after {
+.commercial::after {
   content: "";
   position: absolute;
-  width: 321px;
-  height: 384px;
+  width: 287px;
+  height: 494px;
   right: 0;
-  bottom: -39%;
+  bottom: -17.5%;
   background-image: url("../img/D-subscription-bg@1x.png");
 
   @include flexible-background;
@@ -50,22 +46,23 @@
 
 .commercial__content {
   display: flex !important;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .commercial__item {
   width: 31%;
   border: 7px solid $white;
-  margin-right: 40px;
+  margin-right: 3.4%;
+  margin-bottom: 40px;
   box-sizing: border-box;
   min-height: 448px;
   background: $white;
   padding-top: 22px;
   text-align: center;
+}
 
-  &:last-child {
-    margin-right: 0;
-  }
+.commercial__item:nth-child(3n+3) {
+  margin-right: 0;
 }
 
 .commercial__nav-item {
@@ -199,7 +196,7 @@
     padding-bottom: 95px;
   }
 
-  .commercial__wrapper::after {
+  .commercial::after {
     display: none;
   }
 
