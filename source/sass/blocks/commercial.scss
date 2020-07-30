@@ -197,7 +197,15 @@
   }
 
   .commercial::after {
-    display: none;
+    content: "";
+    width: 347px;
+    height: 444px;
+    bottom: -7.5%;
+    background-image: url("../img/T-subscription-bg@1x.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/T-subscription-bg@2x.png");
+    }
   }
 
   .commercial__title {
@@ -243,6 +251,10 @@
   .commercial {
     padding-top: 65px;
     padding-bottom: 70px;
+  }
+
+  .commercial::after {
+    display: none;
   }
 
   .commercial__nav {
